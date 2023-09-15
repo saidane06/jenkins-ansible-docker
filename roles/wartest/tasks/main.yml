@@ -14,9 +14,6 @@
   docker_container:
     name: wartest
     image: "{{ image }}"
-    environment:
-      REGISTRY_VALIDATION_DISABLED: 'true'
     ports:
       - "8081:8080"
     state: started
-    container_default_behavior: compatibility
