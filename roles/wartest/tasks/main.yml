@@ -13,7 +13,7 @@
 - name: Exécuter le conteneur Docker
   docker_container:
     name: wartest
-    image: registry:latest
+    image: "{{ image }}"
     environment:
       REGISTRY_VALIDATION_DISABLED: 'true'
     ports:
