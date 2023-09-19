@@ -10,7 +10,6 @@
       - docker-compose
     executablee: pip3
     
-
 - name: Exécuter le conteneur Docker
   docker_container:
     name: wartest
