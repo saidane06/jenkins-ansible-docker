@@ -2,7 +2,7 @@
 - name: install wartest
   hosts: all
   become: yes
+  vars:
+    ansible_python_interpreteur: /usr/bin/python3.11
   roles:
     - wartest
-
-
