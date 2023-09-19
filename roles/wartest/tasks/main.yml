@@ -8,12 +8,12 @@
     name:
       - docker
       - docker-compose
-    state: present
+    executablee: pip3
+    
 
 - name: Exécuter le conteneur Docker
   docker_container:
     name: wartest
     image: "{{ image }}"
-    ports:
-      - "8081:8080"
+    ports: "8081:8080"
     state: started
