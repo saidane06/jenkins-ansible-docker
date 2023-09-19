@@ -8,7 +8,7 @@
     name:
       - docker
       - docker-compose
-    executablee: pip3
+    executable: pip3
     
 - name: Exécuter le conteneur Docker
   docker_container:
