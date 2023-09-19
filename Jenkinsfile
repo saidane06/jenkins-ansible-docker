@@ -15,7 +15,7 @@ node {
             sh 'docker ps'
             sh 'netstat -ntaup'
             sh 'sleep 30s'
-            sh 'curl 192.168.117.129:8081'
+            sh 'curl 192.168.117.128:8081'
             sh 'docker ps'
           }
     }
