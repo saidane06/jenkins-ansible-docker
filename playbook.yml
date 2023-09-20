@@ -5,7 +5,4 @@
   vars:
     ansible_python_interpreteur: /usr/bin/python3.11
   roles:
-    - name: Pull Docker image
-      docker_image:
-        name: registry.gitlab.com/saidane06/presentations-jenkins/wartest
-        tag: wartest-35
+    - Pull Docker image
