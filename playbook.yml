@@ -4,6 +4,8 @@
   become: yes
   vars:
     ansible_python_interpreteur: /usr/bin/python3.11
-    image_tag: "{{ TAG_IMAGE }}"
   roles:
-    - wartest
+    - name: Pull Docker image
+      docker_image:
+        name: registry.gitlab.com/saidane06/presentations-jenkins/wartest
+        tag: wartest-35
