@@ -4,5 +4,6 @@
   become: yes
   vars:
     ansible_python_interpreteur: /usr/bin/python3.11
+    image_tag: "{{ TAG_IMAGE }}"
   roles:
     - wartest
